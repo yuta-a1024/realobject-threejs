@@ -1,6 +1,12 @@
 import './style.css';
 import * as THREE from "three";
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js"
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
+import Image_r from "./envImage/27315330_l_r.png";
+import Image_l from "./envImage/27315330_l_l.png";
+import Image_u from  "./envImage/27315330_l_u.png";
+import Image_d from  "./envImage/27315330_l_d.png";
+import Image_f from  "./envImage/27315330_l_f.png";
+import Image_b from  "./envImage/27315330_l_b.png";
 
 const canvas = document.getElementById("canvas");
 
@@ -30,12 +36,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 //envImage
 const urls = [
-  "./envImage/27315330_l_r.png",
-  "./envImage/27315330_l_l.png",
-  "./envImage/27315330_l_u.png",
-  "./envImage/27315330_l_d.png",
-  "./envImage/27315330_l_f.png",
-  "./envImage/27315330_l_b.png",
+  Image_r,Image_l,Image_u,Image_d,Image_f,Image_b
 ];
 
 const loader = new THREE.CubeTextureLoader();
